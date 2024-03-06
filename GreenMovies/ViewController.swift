@@ -8,12 +8,14 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var nameLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = Theme.mainBackgroundColor
+        self.nameLabel.textColor = Theme.fontGray
         
-        let service = Service()
-        service.getMovieList { result, error in
+        Service.shared.getMovieList { result, error in
             guard let list = result?.results else { return }
             for movie in list {
                 print("\(movie.title ?? "")")

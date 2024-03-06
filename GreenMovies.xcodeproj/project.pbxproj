@@ -21,6 +21,9 @@
 		E19156202B98201C00205480 /* MovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E191561F2B98201C00205480 /* MovieList.swift */; };
 		E19156232B98261D00205480 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19156222B98261D00205480 /* Constants.swift */; };
 		E19156252B9843F100205480 /* InfoPlistParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19156242B9843F100205480 /* InfoPlistParser.swift */; };
+		E19156282B9847B600205480 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19156272B9847B600205480 /* Theme.swift */; };
+		E191562A2B98497D00205480 /* Antonio-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E19156292B98497D00205480 /* Antonio-Light.ttf */; };
+		E191562C2B984C0B00205480 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E191562B2B984C0B00205480 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		E191561F2B98201C00205480 /* MovieList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieList.swift; sourceTree = "<group>"; };
 		E19156222B98261D00205480 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E19156242B9843F100205480 /* InfoPlistParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPlistParser.swift; sourceTree = "<group>"; };
+		E19156272B9847B600205480 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		E19156292B98497D00205480 /* Antonio-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Antonio-Light.ttf"; sourceTree = "<group>"; };
+		E191562B2B984C0B00205480 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,10 +166,21 @@
 		E19156212B9825FD00205480 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				E19156262B98479600205480 /* Resources */,
 				E19156222B98261D00205480 /* Constants.swift */,
+				E19156272B9847B600205480 /* Theme.swift */,
 				E19156242B9843F100205480 /* InfoPlistParser.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E19156262B98479600205480 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E19156292B98497D00205480 /* Antonio-Light.ttf */,
+				E191562B2B984C0B00205480 /* Colors.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,8 +287,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E191562C2B984C0B00205480 /* Colors.xcassets in Resources */,
 				E19155F42B981B9E00205480 /* LaunchScreen.storyboard in Resources */,
 				E19155F12B981B9E00205480 /* Assets.xcassets in Resources */,
+				E191562A2B98497D00205480 /* Antonio-Light.ttf in Resources */,
 				E19155EF2B981B9900205480 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E19156282B9847B600205480 /* Theme.swift in Sources */,
 				E19156202B98201C00205480 /* MovieList.swift in Sources */,
 				E19155EC2B981B9900205480 /* ViewController.swift in Sources */,
 				E191561E2B98200000205480 /* Movie.swift in Sources */,

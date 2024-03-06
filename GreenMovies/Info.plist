@@ -4,6 +4,10 @@
 <dict>
 	<key>API_KEY</key>
 	<string>eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzNDk1OWVhZmRmYTE5YzIzYzI3ZTcyMDMyZGZlM2UzMCIsInN1YiI6IjYyNjc2YWYzMTk2NzU3MDBhYjlkYmYxZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.UcnUZ2r5JKKRq_1Z3XLX2gL1TkkW1LfHakDlGqPMm3Q</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Antonio-Light.ttf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
