@@ -6,14 +6,23 @@
 //
 
 import Foundation
+import UIKit
 
 struct EndPoint {
     static let moviesList = "https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1"
     static let header = InfoPlistParser.getStringValue(key: "API_KEY")
+    static let baseImageUrl = "https://image.tmdb.org/t/p/original"
 }
 
 struct Fonts {
     static let antonioLight = "Antonio-Light"
+    
+    static func titles() -> UIFont {
+        guard let myFont = UIFont(name: "Antonio-Light", size: 16) else {
+            return UIFont()
+        }
+        return myFont
+    }
 }
 
 struct Colors {

@@ -33,9 +33,7 @@ class Service: NSObject {
             guard let json = data else { return }
             do {
                 let movieList = try JSONDecoder().decode(MovieList.self, from: json)
-                DispatchQueue.main.async {
-                    completion(movieList, nil)
-                }
+                completion(movieList, nil)
             } catch let jsonError {
                 print("::: Error decode MovieList \(jsonError)")
             }

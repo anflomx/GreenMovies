@@ -7,37 +7,35 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Antonio-Light.ttf">
-            <string>Antonio-Light</string>
-        </array>
-    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GreenMovies" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="GreenMovies" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5w-XY-abO">
-                                <rect key="frame" x="15" y="79" width="363" height="32"/>
-                                <fontDescription key="fontDescription" name="Antonio-Light" family="Antonio" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="d5l-V0-IIs">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="amm-y1-5lm"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="hQM-El-ieB"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="m5w-XY-abO" secondAttribute="trailing" constant="15" id="J5T-GV-nVY"/>
-                            <constraint firstItem="m5w-XY-abO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="Ogo-uZ-Ctx"/>
-                            <constraint firstItem="m5w-XY-abO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="tF9-i3-jjw"/>
+                            <constraint firstItem="d5l-V0-IIs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="IZD-Wb-gL8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="d5l-V0-IIs" secondAttribute="bottom" id="VVg-Yu-GVk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d5l-V0-IIs" secondAttribute="trailing" id="ev3-Ka-eAy"/>
+                            <constraint firstItem="d5l-V0-IIs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fBy-kl-1zD"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="nameLabel" destination="m5w-XY-abO" id="i8J-F5-5Hk"/>
+                        <outlet property="tableView" destination="d5l-V0-IIs" id="PyO-Zg-lTD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
