@@ -15,9 +15,10 @@ class Service: NSObject {
       "Authorization": "Bearer \(EndPoint.header)"
     ]
     
-    func getMovieList(completion: @escaping (MovieList?, Error?) -> ()) {
-        guard let url = NSURL(string: EndPoint.moviesList) as? URL else { return }
-        
+    func getMovieList(page: Int? = nil, completion: @escaping (MovieList?, Error?) -> ()) {
+        let strPage = String(page ?? 1)
+        guard let url = NSURL(string: EndPoint.moviesList+strPage) as? URL else { return }
+        //print("::: url \(url)")
         let request = NSMutableURLRequest(url: url, cachePolicy: .useProtocolCachePolicy, timeoutInterval: 10.0)
         
         request.httpMethod = "GET"

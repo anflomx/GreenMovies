@@ -12,7 +12,7 @@ final class DetailViewController: UIViewController {
     
     private let titleLabel: UILabel = {
         let label = UILabel()
-        label.numberOfLines = 1
+        label.numberOfLines = 0
         label.textAlignment = .center
         return label
     }()
@@ -72,12 +72,12 @@ final class DetailViewController: UIViewController {
         stackView.spacing = 10
         stackView.axis = .vertical
         stackView.distribution = .fill
-        //stackView.backgroundColor = .cyan
         
         view.addSubview(stackView)
         stackView.anchor(top: posterImageView.bottomAnchor,
                                 left: view.leftAnchor,
-                                right: view.rightAnchor)
+                                right: view.rightAnchor,
+                         paddingTop: 10, paddingLeft: 15, paddingRight: 15)
         
         titleLabel.attributedText = movieViewModel.title
         releaseDateLabel.attributedText = movieViewModel.releaseDate

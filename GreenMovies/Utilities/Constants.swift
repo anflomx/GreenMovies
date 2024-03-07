@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 struct EndPoint {
-    static let moviesList = "https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1"
+    static let moviesList = "https://api.themoviedb.org/3/movie/top_rated?language=en-US&page="
     static let header = InfoPlistParser.getStringValue(key: "API_KEY")
     static let baseImageUrl = "https://image.tmdb.org/t/p/original"
 }

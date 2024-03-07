@@ -54,3 +54,13 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
         return 120
     }
 }
+
+extension HomeViewController: UIScrollViewDelegate {
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let bottom = scrollView.contentOffset.y + scrollView.frame.height
+        if bottom >= scrollView.contentSize.height {
+            let currentPage = movieListViewModel.pageInfo.currentPage + 1
+            movieListViewModel.getMovieList(page: currentPage)
+        }
+    }
+}
