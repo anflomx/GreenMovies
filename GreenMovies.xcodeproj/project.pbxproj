@@ -29,6 +29,8 @@
 		E19156382B99047D00205480 /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19156372B99047D00205480 /* MovieListViewModel.swift */; };
 		E191563A2B9905AA00205480 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19156392B9905AA00205480 /* MovieViewModel.swift */; };
 		E191563C2B996D4A00205480 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E191563B2B996D4A00205480 /* UIImageView+Extensions.swift */; };
+		E191563F2B9995D000205480 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E191563E2B9995D000205480 /* DetailViewController.swift */; };
+		E19156452B99B1FE00205480 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19156442B99B1FE00205480 /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		E19156372B99047D00205480 /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
 		E19156392B9905AA00205480 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
 		E191563B2B996D4A00205480 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		E191563E2B9995D000205480 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E19156442B99B1FE00205480 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,7 @@
 				E19155E72B981B9900205480 /* AppDelegate.swift */,
 				E19155E92B981B9900205480 /* SceneDelegate.swift */,
 				E19156332B98F5F900205480 /* Home */,
+				E191563D2B99958700205480 /* Detail */,
 				E19156172B981BD800205480 /* Services */,
 				E19156212B9825FD00205480 /* Utilities */,
 				E19155ED2B981B9900205480 /* Main.storyboard */,
@@ -180,6 +185,7 @@
 				E19156272B9847B600205480 /* Theme.swift */,
 				E19156242B9843F100205480 /* InfoPlistParser.swift */,
 				E191563B2B996D4A00205480 /* UIImageView+Extensions.swift */,
+				E19156442B99B1FE00205480 /* UIView+Extensions.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -228,6 +234,22 @@
 				E19156392B9905AA00205480 /* MovieViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E191563D2B99958700205480 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				E19156402B99990F00205480 /* View */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		E19156402B99990F00205480 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E191563E2B9995D000205480 /* DetailViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -376,7 +398,9 @@
 				E19155E82B981B9900205480 /* AppDelegate.swift in Sources */,
 				E191563A2B9905AA00205480 /* MovieViewModel.swift in Sources */,
 				E19155EA2B981B9900205480 /* SceneDelegate.swift in Sources */,
+				E19156452B99B1FE00205480 /* UIView+Extensions.swift in Sources */,
 				E19156382B99047D00205480 /* MovieListViewModel.swift in Sources */,
+				E191563F2B9995D000205480 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

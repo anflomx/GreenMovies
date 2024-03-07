@@ -12,6 +12,8 @@ protocol MovieType {
     var title: NSMutableAttributedString { get }
     var releaseDate: NSMutableAttributedString { get }
     var url: String { get }
+    var description: NSMutableAttributedString { get }
+    var rating: NSMutableAttributedString { get }
 }
 
 struct MovieViewModel: MovieType {
@@ -24,18 +26,26 @@ struct MovieViewModel: MovieType {
     }
     
     var releaseDate: NSMutableAttributedString {
-        let mutableAttributedString = NSMutableAttributedString()
-        let date = NSMutableAttributedString(string: movie.release_date ?? "",
+        let date = NSMutableAttributedString(string: "Premiered in: \(movie.release_date ?? "")",
                                              attributes: [.font: UIFont(name: Fonts.antonioLight, size: 16)])
-        let text = NSMutableAttributedString(string: "Premiered in: ",
-                                             attributes: [.font: UIFont(name: Fonts.antonioLight, size: 16)])
-        mutableAttributedString.append(text)
-        mutableAttributedString.append(date)
-        return mutableAttributedString
+        return date
     }
     
     var url: String {
         let path = movie.poster_path ?? ""
         return EndPoint.baseImageUrl+path
+    }
+    
+    var description: NSMutableAttributedString {
+        let desc = NSMutableAttributedString(string: movie.overview ?? "",
+                                             attributes: [.font: UIFont(name: Fonts.antonioLight, size: 18)])
+        return desc
+    }
+    
+    var rating: NSMutableAttributedString {
+        let str = String(movie.vote_average ?? 0)
+        let rating = NSMutableAttributedString(string: "Rating: \(str)",
+                                               attributes: [.font: UIFont(name: Fonts.antonioLight, size: 18)])
+        return rating
     }
 }
