@@ -21,13 +21,13 @@ struct MovieViewModel: MovieType {
     
     var title: NSMutableAttributedString {
         let title = NSMutableAttributedString(string: movie.title ?? "",
-                                              attributes: [.font: UIFont(name: Fonts.antonioLight, size: 20)])
+                                              attributes: [.font: UIFont(name: Fonts.antonioLight, size: 20) ?? UIFont()])
         return title
     }
     
     var releaseDate: NSMutableAttributedString {
         let date = NSMutableAttributedString(string: "Premiered in: \(movie.release_date ?? "")",
-                                             attributes: [.font: UIFont(name: Fonts.antonioLight, size: 16)])
+                                             attributes: [.font: UIFont(name: Fonts.antonioLight, size: 16) ?? UIFont()])
         return date
     }
     
@@ -38,14 +38,14 @@ struct MovieViewModel: MovieType {
     
     var description: NSMutableAttributedString {
         let desc = NSMutableAttributedString(string: movie.overview ?? "",
-                                             attributes: [.font: UIFont(name: Fonts.antonioLight, size: 18)])
+                                             attributes: [.font: UIFont(name: Fonts.antonioLight, size: 18) ?? UIFont()])
         return desc
     }
     
     var rating: NSMutableAttributedString {
-        let str = String(movie.vote_average ?? 0)
-        let rating = NSMutableAttributedString(string: "Rating: \(str)",
-                                               attributes: [.font: UIFont(name: Fonts.antonioLight, size: 18)])
+        let str = String(format: "%.1f", movie.vote_average ?? 0)
+        let rating = NSMutableAttributedString(string: "Rating: \(str) / 10",
+                                               attributes: [.font: UIFont(name: Fonts.antonioLight, size: 18) ?? UIFont()])
         return rating
     }
 }

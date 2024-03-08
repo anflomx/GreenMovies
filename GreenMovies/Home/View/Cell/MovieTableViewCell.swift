@@ -31,5 +31,6 @@ class MovieTableViewCell: UITableViewCell {
         movieTitleLabel.attributedText = movieViewModel.title
         movieReleaseDateLabel.attributedText = movieViewModel.releaseDate
         movieImage.load(url: movieViewModel.url)
+        self.selectionStyle = .none
     }
 }

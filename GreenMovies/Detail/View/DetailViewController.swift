@@ -44,6 +44,11 @@ final class DetailViewController: UIViewController {
         label.textAlignment = .center
         return label
     }()
+    
+    private let opinionButton: GreenMoviesButton = {
+        let button = GreenMoviesButton()
+        return button
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,7 +65,7 @@ final class DetailViewController: UIViewController {
     }
     
     private func setupUI() {
-        view.backgroundColor = .white
+        view.backgroundColor = Theme.mainBackgroundColor
         
         view.addSubview(posterImageView)
         posterImageView.anchor(top: view.safeAreaLayoutGuide.topAnchor,
@@ -84,5 +89,24 @@ final class DetailViewController: UIViewController {
         posterImageView.load(url: movieViewModel.url)
         descriptionLabel.attributedText = movieViewModel.description
         ratingLabel.attributedText = movieViewModel.rating
+        
+        opinionButton.setTitle("Your Opinion", for: .normal)
+        view.addSubview(opinionButton)
+        opinionButton.anchor(top: stackView.bottomAnchor, paddingTop: 10, width: 150, height: 60, centerX: view.centerXAnchor)
+        opinionButton.addTarget(self, action: #selector(pressedAction(_:)), for: .touchUpInside)
+    }
+    
+    @objc
+    func pressedAction(_ sender: UIButton) {
+        let vc = OpinionViewController()
+        vc.modalPresentationStyle = .overCurrentContext
+        vc.delegate = self
+        self.present(vc, animated: false)
+    }
+}
+
+extension DetailViewController: OpinionViewControllerDelegate {
+    func showToastMessage() {
+        self.showToast(message: "Opinion added, Thanks!")
     }
 }

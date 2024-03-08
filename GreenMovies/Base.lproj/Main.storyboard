@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="d5l-V0-IIs">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <rect key="frame" x="15" y="103" width="363" height="715"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="amm-y1-5lm"/>
@@ -30,8 +30,8 @@
                         <constraints>
                             <constraint firstItem="d5l-V0-IIs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="IZD-Wb-gL8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="d5l-V0-IIs" secondAttribute="bottom" id="VVg-Yu-GVk"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d5l-V0-IIs" secondAttribute="trailing" id="ev3-Ka-eAy"/>
-                            <constraint firstItem="d5l-V0-IIs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fBy-kl-1zD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d5l-V0-IIs" secondAttribute="trailing" constant="15" id="ev3-Ka-eAy"/>
+                            <constraint firstItem="d5l-V0-IIs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="fBy-kl-1zD"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="j10-l0-GaK"/>

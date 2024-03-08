@@ -31,6 +31,11 @@
 		E191563C2B996D4A00205480 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E191563B2B996D4A00205480 /* UIImageView+Extensions.swift */; };
 		E191563F2B9995D000205480 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E191563E2B9995D000205480 /* DetailViewController.swift */; };
 		E19156452B99B1FE00205480 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19156442B99B1FE00205480 /* UIView+Extensions.swift */; };
+		E191564C2B9A6F6B00205480 /* GreenMoviesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E191564B2B9A6F6B00205480 /* GreenMoviesButton.swift */; };
+		E19156582B9A90AF00205480 /* OpinionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19156562B9A90AF00205480 /* OpinionViewController.swift */; };
+		E19156592B9A90AF00205480 /* OpinionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E19156572B9A90AF00205480 /* OpinionViewController.xib */; };
+		E191565B2B9AB02500205480 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E191565A2B9AB02500205480 /* UIViewController+Extensions.swift */; };
+		E191565E2B9AC18500205480 /* GreenMoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E191565D2B9AC18500205480 /* GreenMoviesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +84,11 @@
 		E191563B2B996D4A00205480 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		E191563E2B9995D000205480 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		E19156442B99B1FE00205480 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		E191564B2B9A6F6B00205480 /* GreenMoviesButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenMoviesButton.swift; sourceTree = "<group>"; };
+		E19156562B9A90AF00205480 /* OpinionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpinionViewController.swift; sourceTree = "<group>"; };
+		E19156572B9A90AF00205480 /* OpinionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OpinionViewController.xib; sourceTree = "<group>"; };
+		E191565A2B9AB02500205480 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		E191565D2B9AC18500205480 /* GreenMoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenMoviesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +143,7 @@
 				E19155E92B981B9900205480 /* SceneDelegate.swift */,
 				E19156332B98F5F900205480 /* Home */,
 				E191563D2B99958700205480 /* Detail */,
+				E19156552B9A907E00205480 /* Opinion */,
 				E19156172B981BD800205480 /* Services */,
 				E19156212B9825FD00205480 /* Utilities */,
 				E19155ED2B981B9900205480 /* Main.storyboard */,
@@ -180,12 +191,12 @@
 		E19156212B9825FD00205480 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				E191564D2B9A6FB300205480 /* Extensions */,
+				E191564A2B9A6F5700205480 /* Components */,
 				E19156262B98479600205480 /* Resources */,
 				E19156222B98261D00205480 /* Constants.swift */,
 				E19156272B9847B600205480 /* Theme.swift */,
 				E19156242B9843F100205480 /* InfoPlistParser.swift */,
-				E191563B2B996D4A00205480 /* UIImageView+Extensions.swift */,
-				E19156442B99B1FE00205480 /* UIView+Extensions.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -250,6 +261,50 @@
 				E191563E2B9995D000205480 /* DetailViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		E191564A2B9A6F5700205480 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E191565C2B9AC16100205480 /* Views */,
+				E191564E2B9A713E00205480 /* Button */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E191564D2B9A6FB300205480 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E191563B2B996D4A00205480 /* UIImageView+Extensions.swift */,
+				E19156442B99B1FE00205480 /* UIView+Extensions.swift */,
+				E191565A2B9AB02500205480 /* UIViewController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E191564E2B9A713E00205480 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				E191564B2B9A6F6B00205480 /* GreenMoviesButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		E19156552B9A907E00205480 /* Opinion */ = {
+			isa = PBXGroup;
+			children = (
+				E19156562B9A90AF00205480 /* OpinionViewController.swift */,
+				E19156572B9A90AF00205480 /* OpinionViewController.xib */,
+			);
+			path = Opinion;
+			sourceTree = "<group>";
+		};
+		E191565C2B9AC16100205480 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E191565D2B9AC18500205480 /* GreenMoviesView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,6 +415,7 @@
 				E19155F42B981B9E00205480 /* LaunchScreen.storyboard in Resources */,
 				E19156322B98E20900205480 /* MovieTableViewCell.xib in Resources */,
 				E19155F12B981B9E00205480 /* Assets.xcassets in Resources */,
+				E19156592B9A90AF00205480 /* OpinionViewController.xib in Resources */,
 				E191562A2B98497D00205480 /* Antonio-Light.ttf in Resources */,
 				E19155EF2B981B9900205480 /* Main.storyboard in Resources */,
 			);
@@ -390,16 +446,20 @@
 				E19156312B98E20900205480 /* MovieTableViewCell.swift in Sources */,
 				E19156282B9847B600205480 /* Theme.swift in Sources */,
 				E19156202B98201C00205480 /* MovieList.swift in Sources */,
+				E191565B2B9AB02500205480 /* UIViewController+Extensions.swift in Sources */,
 				E19155EC2B981B9900205480 /* HomeViewController.swift in Sources */,
 				E191561E2B98200000205480 /* Movie.swift in Sources */,
 				E19156192B981BF300205480 /* Service.swift in Sources */,
 				E19156232B98261D00205480 /* Constants.swift in Sources */,
+				E19156582B9A90AF00205480 /* OpinionViewController.swift in Sources */,
 				E19156252B9843F100205480 /* InfoPlistParser.swift in Sources */,
 				E19155E82B981B9900205480 /* AppDelegate.swift in Sources */,
 				E191563A2B9905AA00205480 /* MovieViewModel.swift in Sources */,
 				E19155EA2B981B9900205480 /* SceneDelegate.swift in Sources */,
+				E191565E2B9AC18500205480 /* GreenMoviesView.swift in Sources */,
 				E19156452B99B1FE00205480 /* UIView+Extensions.swift in Sources */,
 				E19156382B99047D00205480 /* MovieListViewModel.swift in Sources */,
+				E191564C2B9A6F6B00205480 /* GreenMoviesButton.swift in Sources */,
 				E191563F2B9995D000205480 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

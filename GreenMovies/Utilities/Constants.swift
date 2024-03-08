@@ -16,13 +16,6 @@ struct EndPoint {
 
 struct Fonts {
     static let antonioLight = "Antonio-Light"
-    
-    static func titles() -> UIFont {
-        guard let myFont = UIFont(name: "Antonio-Light", size: 16) else {
-            return UIFont()
-        }
-        return myFont
-    }
 }
 
 struct Colors {

@@ -9,7 +9,8 @@ import UIKit
 
 class Theme {
     static let mainFont = Fonts.antonioLight
-    static let mainBackgroundColor = UIColor(named: Colors.background900)
+    static let mainBackgroundColor = UIColor(named: Colors.background700)
+    static let buttonColor = UIColor(named: Colors.background900)
     static let fontGreen = UIColor(named: Colors.green)
     static let fontGray = UIColor(named: Colors.gray)
     static let fontWhite = UIColor(named: Colors.white)

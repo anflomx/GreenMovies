@@ -15,6 +15,11 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         configCell()
         
+        self.title = "Green Movies"
+        self.navigationController?.navigationBar.titleTextAttributes = [
+            NSAttributedString.Key.font: UIFont(name: Theme.mainFont, size: 20) ?? UIFont(), NSAttributedString.Key.foregroundColor: UIColor.white]
+
+        self.view.backgroundColor = Theme.mainBackgroundColor
         movieListViewModel.getMovieList()
         movieListViewModel.refreshData = { [weak self] () in
             DispatchQueue.main.async {
