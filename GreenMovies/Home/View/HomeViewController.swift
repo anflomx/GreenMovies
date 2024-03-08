@@ -20,10 +20,13 @@ class HomeViewController: UIViewController {
             NSAttributedString.Key.font: UIFont(name: Theme.mainFont, size: 20) ?? UIFont(), NSAttributedString.Key.foregroundColor: UIColor.white]
 
         self.view.backgroundColor = Theme.mainBackgroundColor
+        
+        self.showSpinner(onView: self.view)
         movieListViewModel.getMovieList()
         movieListViewModel.refreshData = { [weak self] () in
             DispatchQueue.main.async {
                 self?.tableView.reloadData()
+                self?.removeSpinner()
             }
         }
     }
@@ -65,6 +68,7 @@ extension HomeViewController: UIScrollViewDelegate {
         let bottom = scrollView.contentOffset.y + scrollView.frame.height
         if bottom >= scrollView.contentSize.height {
             let currentPage = movieListViewModel.pageInfo.currentPage + 1
+            self.showSpinner(onView: self.view)
             movieListViewModel.getMovieList(page: currentPage)
         }
     }

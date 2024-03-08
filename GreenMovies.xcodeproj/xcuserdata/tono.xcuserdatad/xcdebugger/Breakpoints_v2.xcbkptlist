@@ -76,10 +76,8 @@
             filePath = "GreenMovies/Home/View/HomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
-            landmarkName = "HomeViewController"
-            landmarkType = "21">
+            startingLineNumber = "76"
+            endingLineNumber = "76">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -124,9 +122,9 @@
             filePath = "GreenMovies/Home/View/HomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "tableView(_:didSelectRowAt:)"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "scrollViewDidEndDecelerating(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -140,10 +138,10 @@
             filePath = "GreenMovies/Home/View/HomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "HomeViewController"
+            landmarkType = "21">
             <Locations>
                <Location
                   uuid = "4EB386B5-8987-4BA6-B08F-9C0024EB7928 - 585b1055a0ebb9b9"
@@ -188,10 +186,8 @@
             filePath = "GreenMovies/Home/View/HomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "scrollViewDidEndDecelerating(_:)"
-            landmarkType = "7">
+            startingLineNumber = "79"
+            endingLineNumber = "79">
             <Locations>
                <Location
                   uuid = "C302D102-CD46-49D8-B586-42F92F47814C - 249d9f1fa95d03c8"
@@ -251,10 +247,10 @@
             filePath = "GreenMovies/Home/View/HomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "tableView(_:didSelectRowAt:)"
-            landmarkType = "7">
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "HomeViewController"
+            landmarkType = "21">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -283,6 +279,85 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "89"
             endingLineNumber = "89">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "11C1235D-39CE-491B-95DC-27E658F082D7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GreenMovies/Home/ViewModel/MovieListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "getMovieList(page:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E69C4020-7C32-4547-B52E-882EA3555EB1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GreenMovies/Home/View/HomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "HomeViewController"
+            landmarkType = "21">
+            <Locations>
+               <Location
+                  uuid = "E69C4020-7C32-4547-B52E-882EA3555EB1 - c70bec9a6d5ff24a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GreenMovies.HomeViewController.refresh() -&gt; ()"
+                  moduleName = "GreenMovies"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tono/Downloads/ios_projects/GreenMovies/GreenMovies/Home/View/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  uuid = "E69C4020-7C32-4547-B52E-882EA3555EB1 - 990a1aaa0daaf306"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in GreenMovies.HomeViewController.refresh() -&gt; ()"
+                  moduleName = "GreenMovies"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tono/Downloads/ios_projects/GreenMovies/GreenMovies/Home/View/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "147">
+               </Location>
+               <Location
+                  uuid = "E69C4020-7C32-4547-B52E-882EA3555EB1 - 92ea28b1e8bea0d8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 () -&gt; () in GreenMovies.HomeViewController.refresh() -&gt; ()"
+                  moduleName = "GreenMovies"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tono/Downloads/ios_projects/GreenMovies/GreenMovies/Home/View/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "37">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
