@@ -58,6 +58,7 @@ final class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        self.navigationController?.view.tintColor = UIColor.white
     }
     
     init(movieViewModel: MovieViewModel) {
