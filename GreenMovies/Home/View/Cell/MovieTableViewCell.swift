@@ -28,8 +28,8 @@ class MovieTableViewCell: UITableViewCell {
     
     private func setup() {
         guard let movieViewModel = movieViewModel else { return }
-        movieTitleLabel.attributedText = movieViewModel.title
-        movieReleaseDateLabel.attributedText = movieViewModel.releaseDate
+        movieTitleLabel.attributedText = movieViewModel.titleCel
+        movieReleaseDateLabel.attributedText = movieViewModel.releaseDateCel
         movieImage.load(url: movieViewModel.url)
         self.selectionStyle = .none
     }

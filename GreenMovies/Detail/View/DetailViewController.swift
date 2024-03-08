@@ -10,6 +10,11 @@ import UIKit
 final class DetailViewController: UIViewController {
     private var movieViewModel: MovieViewModel
     
+    private let scroll: UIScrollView = {
+        let scroll = UIScrollView()
+        return scroll
+    }()
+    
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
@@ -67,18 +72,23 @@ final class DetailViewController: UIViewController {
     private func setupUI() {
         view.backgroundColor = Theme.mainBackgroundColor
         
-        view.addSubview(posterImageView)
-        posterImageView.anchor(top: view.safeAreaLayoutGuide.topAnchor,
+        view.addSubview(scroll)
+        scroll.anchor(top: view.topAnchor,
+                      left: view.leftAnchor,
+                      bottom: view.bottomAnchor,
+                      right: view.rightAnchor)
+        
+        scroll.addSubview(posterImageView)
+        posterImageView.anchor(top: scroll.topAnchor,
                                width: 125,
                                height: 250,
-                               centerX: view.centerXAnchor)
+                               centerX: scroll.centerXAnchor)
         
         let stackView = UIStackView(arrangedSubviews: [titleLabel, releaseDateLabel, descriptionLabel, ratingLabel])
         stackView.spacing = 10
         stackView.axis = .vertical
         stackView.distribution = .fill
-        
-        view.addSubview(stackView)
+        scroll.addSubview(stackView)
         stackView.anchor(top: posterImageView.bottomAnchor,
                                 left: view.leftAnchor,
                                 right: view.rightAnchor,
@@ -91,8 +101,13 @@ final class DetailViewController: UIViewController {
         ratingLabel.attributedText = movieViewModel.rating
         
         opinionButton.setTitle("Your Opinion", for: .normal)
-        view.addSubview(opinionButton)
-        opinionButton.anchor(top: stackView.bottomAnchor, paddingTop: 10, width: 150, height: 60, centerX: view.centerXAnchor)
+        scroll.addSubview(opinionButton)
+        opinionButton.anchor(top: stackView.bottomAnchor,
+                             bottom: scroll.bottomAnchor,
+                             paddingTop: 10,
+                             width: 150,
+                             height: 60,
+                             centerX: scroll.centerXAnchor)
         opinionButton.addTarget(self, action: #selector(pressedAction(_:)), for: .touchUpInside)
     }
     
