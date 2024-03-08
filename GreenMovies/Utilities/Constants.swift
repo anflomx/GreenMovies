@@ -32,4 +32,5 @@ struct Colors {
     static let green = "Green"
     static let gray = "Gray"
     static let white = "White"
+    static let alert = "Alerts"
 }

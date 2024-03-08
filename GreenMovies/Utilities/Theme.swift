@@ -14,4 +14,5 @@ class Theme {
     static let fontGreen = UIColor(named: Colors.green)
     static let fontGray = UIColor(named: Colors.gray)
     static let fontWhite = UIColor(named: Colors.white)
+    static let alertsColor = UIColor(named: Colors.alert)
 }
